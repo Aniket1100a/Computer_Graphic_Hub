@@ -1,0 +1,116 @@
+/* Reset some default styles for consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set text color */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a background color and centered logo */
+header {
+    background-color: #0078d4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the navigation menu with a horizontal layout */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the logo image */
+.logo img {
+    max-width: 100%;
+    padding-top: 15px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+/* Center the units section and style individual units */
+#units {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.unit {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.unit h2 {
+    color: #0078d4;
+    font-size: 24px;
+}
+
+.unit p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the "Start Learning" buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005a9e;
+}
+
+/* Style the footer */
+footer {
+    background-color: #0078d4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style footer links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Style footer social media icons */
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #005a9e;
+}

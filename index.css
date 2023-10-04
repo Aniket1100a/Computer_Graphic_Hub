@@ -1,0 +1,186 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0078d4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the navigation menu with a horizontal layout */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #ff9900; /* Change the text color on hover */
+}
+.logo img {
+    padding-top: 15px;
+    width: 500px;
+    border-radius: 30px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+.featured-article {
+    width: 45%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.featured-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.featured-article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.featured-article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.featured-article p {
+    font-size: 16px;
+}
+.featured-article:hover {
+    transform: translateY(-5px);
+}
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+.hero {
+    position: relative;
+    background-image: url('Home page elements\hero-image.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/* Background Overlay */
+.hero::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Semi-transparent overlay */
+    
+}
+
+/* Headline Style */
+.hero h1 {
+    color: black;
+    font-family: sans-serif; /* Replace with your preferred font */
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Text shadow for readability */
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+/* Tagline Style */
+.hero p {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Call-to-Action (CTA) Button Style */
+.hero .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Apply hover effect to the CTA button */
+.hero .cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#img1 {
+    width: 500px;
+}
+#video1 {
+    width: 500px;
+}
+footer {
+    background-color: #0078d4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style footer links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #005a9e;
+}
