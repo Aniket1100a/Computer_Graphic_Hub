@@ -1,0 +1,62 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header */
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+#introduction {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+/* Styling for main sections */
+section {
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for polygon types */
+.polygon-type {
+    margin-top: 20px;
+}
+.img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    width: 600px;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

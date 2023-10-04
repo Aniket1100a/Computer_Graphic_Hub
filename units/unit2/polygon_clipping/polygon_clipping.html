@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="polygon_clipping.css">
+    <title>Polygon Clipping: Sutherland-Hodgeman and Weiler-Atherton Algorithms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Polygon Clipping: Sutherland-Hodgeman and Weiler-Atherton Algorithms</h1>
+    </header>
+
+    <section id="sutherlandHodgeman">
+        <h2>Sutherland-Hodgeman Algorithm</h2>
+        <p>The Sutherland-Hodgeman algorithm is a polygon clipping algorithm used to clip a polygon against a rectangular window. It processes each edge of the polygon and clips it against the window boundaries.</p>
+        <br>
+        <img class="img" src="img/example.jpg" alt="Sutherland-Hodgeman">
+        <br>
+        <h3>Key Steps:</h3>
+        <ol>
+            <p>For each polygon edge, determine if it is entering, exiting, or inside the window.</p>
+            <p>Clip the entering edge and output the intersection point.</p>
+            <p>For inside edges, output the intersection points.</p>
+            <p>Clip the exiting edge and output the intersection point.</p>
+        </ol>
+        
+        <h3>Advantages:</h3>
+        <ul>
+            <p>Simple and easy to implement.</p>
+            <p>Works well for convex polygons.</p>
+        </ul>
+        
+        <h3>Limitations:</h3>
+        <ul>
+            <p>Doesn't handle concave polygons properly.</p>
+            <p>May produce extra vertices.</p>
+        </ul>
+        
+        <a href="https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm" class="wiki-button" target="_blank">Learn More on Wikipedia</a>
+    </section>
+
+    <section id="weilerAtherton">
+        <h2>Weiler-Atherton Algorithm</h2>
+        <p>The Weiler-Atherton algorithm is a more complex polygon clipping algorithm that handles polygons with holes. It generates the clipped polygon by computing intersection points and following contour paths.</p>
+        <br>
+        <img class="img" src="img/example2.png" alt="weilerAtherton example">
+        <br>
+        <h3>Key Steps:</h3>
+        <ol>
+            <p>Compute intersection points between the polygon edges and the window boundaries.</p>
+            <p>Follow contour paths to create the clipped polygons.</p>
+            <p>Handle cases where holes are involved in the clipping.</p>
+        </ol>
+        
+        <h3>Advantages:</h3>
+        <ul>
+            <p>Works for polygons with holes.</p>
+            <p>Produces accurate results.</p>
+        </ul>
+        
+        <h3>Limitations:</h3>
+        <ul>
+            <p>More complex implementation compared to Sutherland-Hodgeman.</p>
+            <p>Requires handling multiple intersection cases.</p>
+        </ul>
+        
+        <a href="https://en.wikipedia.org/wiki/Weiler%E2%80%93Atherton_clipping_algorithm" class="wiki-button" target="_blank">Learn More on Wikipedia</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Computer Graphics Hub</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.wiki-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wiki-button:hover {
+    background-color: #005DAE;
+    transform: scale(1.05);
+}
+
+/* Footer styling with fade-in effect */
+footer {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Copyright text styling */
+footer p {
+    font-weight: bold;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

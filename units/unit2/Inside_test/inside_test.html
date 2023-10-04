@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inside_test.css">
+    <title>Inside Test Methods in Polygon Graphics</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring Inside Test Methods in Polygon Graphics</h1>
+    </header>
+
+    <section id="even-odd-method">
+        <h2>Even-Odd Method</h2>
+        <p><strong>Principle:</strong> The Even-Odd Method, also known as the Ray Casting Algorithm, evaluates the number of intersections between a ray cast from the point and the edges of the polygon. If the number of intersections is odd, the point is inside the polygon; if it's even, the point is outside.</p>
+        <p><strong>Applications:</strong> This method is widely used in graphic rendering engines for its simplicity and efficiency. It's employed in various applications, from computer-aided design to video game development, ensuring accurate rendering of complex shapes.</p>
+        <img src="img/even_odd_method.png" alt="Even-Odd Method">
+        <div class="steps">
+            <h3>Steps for Even-Odd Method:</h3>
+            <ol>
+                <li>Cast a ray from the test point in any direction.</li>
+                <li>Count the number of intersections between the ray and the edges of the polygon.</li>
+                <li>If the number of intersections is odd, the point is inside the polygon; if it's even, the point is outside.</li>
+            </ol>
+        </div>
+
+        <a href="https://en.wikipedia.org/wiki/Even%E2%80%93odd_rule" target="_blank" class="wikipedia-button">Learn more on Wikipedia</a>
+    </section>
+
+    <section id="winding-number-method">
+        <h2>Winding Number Method</h2>
+        <p><strong>Principle:</strong> The Winding Number Method calculates the winding number of a point concerning the polygon. By analyzing the angle formed between the point and the polygon vertices, this method determines whether the point is inside or outside the polygon. A winding number of zero indicates the point is outside, while a non-zero value signifies the point is inside.</p>
+        <p><strong>Applications:</strong> The Winding Number Method is particularly useful in applications requiring precise spatial analysis, such as geographical information systems and architectural design software. Its accuracy makes it a preferred choice for applications where precision is paramount.</p>
+        <img src="img/winding_number_method.gif" alt="Winding Number Method">
+        <br>
+
+        <a href="https://en.wikipedia.org/wiki/Winding_number" target="_blank" class="wikipedia-button">Learn more on Wikipedia</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Polygon Graphics Explorers. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

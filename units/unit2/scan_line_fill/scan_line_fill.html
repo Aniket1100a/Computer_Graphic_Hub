@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scan_line_fill.css">
+    <title>Scan Line Fill Algorithm</title>
+</head>
+
+<body>
+    <header>
+        <h1>Scan Line Fill Algorithm</h1>
+    </header>
+
+    <section class="content">
+        <h2>Introduction to Scan Line Fill Algorithm</h2>
+        <p>The Scan Line Fill Algorithm is a computer graphics algorithm used for filling polygons. It works by scanning the image from top to bottom, finding intersections with the polygon edges, and filling the enclosed areas. This technique is widely used in various graphics applications for coloring complex shapes.</p>
+
+        <div class="image-container">
+            <img src="img/scanlinefilling.png" alt="Scan Line Fill Algorithm Example">
+        </div>
+
+        <h2>How Scan Line Fill Algorithm Works</h2>
+        <ol>
+            <li>Sort the edges of the polygon by their y-coordinates to determine the order in which they intersect the scan lines.</li>
+            <li>For each scan line, find intersections with the polygon edges using edge equations.</li>
+            <li>Fill the pixel positions between pairs of intersections on the scan line.</li>
+            <li>Repeat this process for each scan line until the entire polygon is filled.</li>
+        </ol>
+
+        <a href="https://en.wikipedia.org/wiki/Scanline_algorithm" target="_blank" class="wiki-button">Learn More on Wikipedia</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Computer Graphics Tutorials</p>
+    </footer>
+</body>
+
+</html>

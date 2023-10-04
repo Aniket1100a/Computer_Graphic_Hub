@@ -1,0 +1,91 @@
+/* Add your styles for flood_fill.html here */
+/* For illustration purposes, the styles below are placeholders */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+section img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+/* Add styles for Boundary-Fill Algorithm */
+.flood-fill-steps h3 {
+    font-size: 18px;
+    color: #0078d4;
+    margin-top: 10px;
+}
+
+.flood-fill-steps h4 {
+    font-size: 16px;
+    color: #0078d4;
+    margin-top: 10px;
+}
+
+.flood-fill-steps ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.flood-fill-steps li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/* Add styles for flood fill algorithm steps */
+.flood-fill-steps {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.flood-fill-steps h3 {
+    font-size: 18px;
+    color: #0078d4;
+}
+
+.flood-fill-steps p {
+    font-size: 16px;
+}
+
+
+.wiki-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wiki-button:hover {
+    background-color: #005DAE;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}

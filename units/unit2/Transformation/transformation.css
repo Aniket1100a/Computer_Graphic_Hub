@@ -1,0 +1,67 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content {
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.img {
+    width: 600px;
+}
+
+.transformation-type {
+    margin-top: 40px;
+}
+
+.transformation-type h3 {
+    font-size: 24px;
+    color: #0078d4;
+    margin-bottom: 10px;
+}
+
+.transformation-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.wiki-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wiki-button:hover {
+    background-color: #005DAE;
+    transform: scale(1.05);
+}
+footer {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}

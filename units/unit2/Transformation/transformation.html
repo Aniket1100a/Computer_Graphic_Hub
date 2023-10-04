@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transformation.css">
+    <title>Understanding Transformations</title>
+</head>
+
+<body>
+    <header>
+        <h1>Understanding Transformations in Computer Graphics</h1>
+    </header>
+
+    <section class="content">
+        <h2>What are Transformations?</h2>
+        <p>Transformations in computer graphics refer to the process of changing the position, size, or orientation of objects in a 2D or 3D space. Transformations are fundamental operations used to create various effects and animations in graphics applications.</p>
+        <br>
+        <h2>Translation</h2>
+
+        <div class="transformation-explanation">
+            <p>Translation moves an object from one location to another by a fixed distance along a specified direction. It shifts the object horizontally and vertically in 2D graphics and can also be performed along the z-axis in 3D space.</p>
+        </div>
+
+        <br>
+        
+        <div class="transformation-example">
+            <h3>Translation Example</h3>
+            <img class="img" src="img/translation_example.gif" alt="Translation Example">
+        </div>
+
+        <div class="transformation-formula">
+            <h3>Formula</h3>
+            <p>For 2D translation: <br> NewX = X + Tx <br> NewY = Y + Ty </p>
+            <p>For 3D translation: <br> NewX = X + Tx <br> NewY = Y + Ty <br> NewZ = Z + Tz </p>
+        </div>
+
+        <div class="transformation-steps">
+            <h3>Steps for Translation</h3>
+            <ol>
+                <li>Specify the translation distance along the x, y, and z axes (Tx, Ty, Tz).</li>
+                <li>For each point (X, Y, Z) to be translated:</li>
+                <ol type="a">
+                    <li>Calculate the new X-coordinate: NewX = X + Tx</li>
+                    <li>Calculate the new Y-coordinate: NewY = Y + Ty</li>
+                    <li>Calculate the new Z-coordinate: NewZ = Z + Tz (for 3D translation)</li>
+                </ol>
+            </ol>
+        </div>
+    </section>
+    <section class="content">
+
+        <h2>Scaling</h2>
+
+        <div class="transformation-explanation">
+            <p>Scaling changes the size of an object in the graphic space. It can enlarge or shrink the object. Scaling can be uniform (in all dimensions) or non-uniform (in individual dimensions).</p>
+        </div>
+
+        <br>
+
+        <div class="transformation-example">
+            <h3>Scaling Example</h3>
+            <img class="img" src="img/scaling.gif" alt="Translation Example">
+        </div>
+
+        <div class="transformation-formula">
+            <h3>Formula</h3>
+            <p>For 2D scaling: <br> NewX = X * Sx <br> NewY = Y * Sy </p>
+            <p>For 3D scaling: <br> NewX = X * Sx <br> NewY = Y * Sy <br> NewZ = Z * Sz </p>
+        </div>
+
+        <div class="transformation-steps">
+            <h3>Steps for Scaling</h3>
+            <ol>
+                <li>Specify the scaling factors along the x, y, and z axes (Sx, Sy, Sz).</li>
+                <li>For each point (X, Y, Z) to be scaled:</li>
+                <ol type="a">
+                    <li>Calculate the new X-coordinate: NewX = X * Sx</li>
+                    <li>Calculate the new Y-coordinate: NewY = Y * Sy</li>
+                    <li>Calculate the new Z-coordinate: NewZ = Z * Sz (for 3D scaling)</li>
+                </ol>
+            </ol>
+        </div>
+    </section>
+    <section class="content">
+
+        <h2>Rotation</h2>
+
+        <div class="transformation-explanation">
+            <p>Rotation transforms an object by an angle around a specified point or axis. In 2D graphics, rotation is typically around the origin (0,0). In 3D graphics, rotation can be around any arbitrary axis in 3D space.</p>
+        </div>
+
+        <div class="transformation-example">
+            <h3>Rotation Example</h3>
+            <img class="img" src="img/rotation.gif" alt="Translation Example">
+        </div>
+        <br>
+
+        <div class="transformation-formula">
+            <h3>Formula</h3>
+            <p>For 2D rotation: <br> NewX = X * cos(θ) - Y * sin(θ) <br> NewY = X * sin(θ) + Y * cos(θ) </p>
+            <p>For 3D rotation (around x-axis): <br> NewY = Y * cos(θ) - Z * sin(θ) <br> NewZ = Y * sin(θ) + Z * cos(θ) </p>
+            <p>Similar formulas apply for rotations around y-axis and z-axis in 3D space.</p>
+        </div>
+
+        <div class="transformation-steps">
+            <h3>Steps for Rotation</h3>
+            <ol>
+                <li>Specify the angle of rotation (θ) in radians.</li>
+                <li>For each point (X, Y, Z) to be rotated:</li>
+                <ol type="a">
+                    <li>Calculate the new X-coordinate: NewX = X * cos(θ) - Y * sin(θ)</li>
+                    <li>Calculate the new Y-coordinate: NewY = X * sin(θ) + Y * cos(θ)</li>
+                    <li>Calculate the new Z-coordinate (for 3D rotation): NewZ = Y * sin(θ) + Z * cos(θ)</li>
+                </ol>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Transformation_matrix" target="_blank" class="wiki-button">Learn More on Wikipedia</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* Include your styles for unit2.html here */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+/* Page title styling */
+header h1 {
+    font-size: 36px;
+}
+/* Basic styling for the header */
+header {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Styling for main sections */
+section {
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Subpoint styling */
+.subpoint {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Subpoint hover effect */
+.subpoint:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Subpoint title styling */
+.subpoint h3 {
+    font-size: 24px;
+    color: #0078d4;
+    margin-top: 10px;
+}
+
+/* Subpoint description styling */
+.subpoint p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Call-to-action button styling */
+#introduction a.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #0078d4;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#introduction a.cta-button:hover {
+    background-color: #0078d4;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Button styling */
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.explore-button:hover {
+    background-color: #005DAE;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    background-color: #0078d4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Copyright text styling */
+footer p {
+    font-weight: bold;
+}

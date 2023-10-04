@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2d_cliping.css">
+    <title>2-D Clipping: Cohen-Sutherland Line Clipping Algorithm</title>
+</head>
+<body>
+    <header>
+        <h1>2-D Clipping: Cohen-Sutherland Line Clipping Algorithm</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction to Cohen-Sutherland Line Clipping Algorithm</h2>
+        <p>The Cohen-Sutherland line clipping algorithm is a fundamental technique in 2D computer graphics used for clipping line segments against a rectangular window. It divides the 2D plane into 9 regions and efficiently determines which portion of the line lies inside the window.</p>
+        <p>By using region codes to represent the positions of line endpoints relative to the window, the algorithm efficiently clips lines and ensures only the visible portion of the line is rendered, optimizing graphical rendering in computer graphics applications.</p>
+        
+        <div id="cohenSutherlandClipping">
+            <h2>Cohen-Sutherland Line Clipping Algorithm</h2>
+            <p>The Cohen-Sutherland line clipping algorithm is a vital method in 2D computer graphics for efficiently clipping line segments against a rectangular window. Its purpose is to determine which portion of a line lies within the given window and to clip the line accordingly, optimizing rendering and improving graphical performance.</p>
+            <h3>Key Concepts</h3>
+            <ul>
+                <li><strong>Region Codes:</strong> The algorithm divides the 2D plane into 9 regions using region codes. Each region represents a relative position of a point concerning the clipping window (left, right, top, bottom).</li>
+                <li><strong>Bitwise Operations:</strong> Region codes are efficiently computed using bitwise operations. Each bit in the region code indicates the position of the point relative to the window boundaries.</li>
+                <li><strong>Clipping Process:</strong> The algorithm iterates through the line segments, determining their region codes and efficiently clipping the line against the window boundaries. If both endpoints of a line segment are within the window, the line is drawn directly. If both points are outside a common boundary, the line is trivially rejected. Otherwise, the line is clipped against the window boundaries.</li>
+            </ul>
+            <h3>Advantages</h3>
+            <ul>
+                <li>Efficiency: The algorithm quickly determines the visibility of line segments, reducing computational overhead.</li>
+                <li>Optimized Rendering: By clipping lines, only the visible portions are rendered, improving graphical performance.</li>
+                <li>Simple Implementation: The algorithm's logical structure allows for relatively simple implementation in computer programs.</li>
+            </ul>
+            <h3>Applications</h3>
+            <p>The Cohen-Sutherland line clipping algorithm finds applications in various fields, including computer-aided design (CAD), computer graphics software, and video games. It ensures that only the visible parts of lines are drawn, enhancing the visual quality of graphical elements within applications.</p>
+            <h3>Conclusion</h3>
+            <p>The Cohen-Sutherland line clipping algorithm is a fundamental tool in 2D computer graphics, enabling efficient line clipping against rectangular windows. Its simplicity and effectiveness make it a popular choice for optimizing graphical rendering, ensuring that only the necessary portions of lines are drawn, and thereby enhancing the overall user experience in graphical applications.</p>
+        </div>
+        <br>
+        <div class="images">
+            <img src="img/line_clip.jpg" alt="Line Clipping">
+        </div>
+        <br>
+        
+        <a href="https://en.wikipedia.org/wiki/Cohen%E2%80%93Sutherland_algorithm" class="wiki-button" target="_blank">Learn More on Wikipedia</a>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Computer Graphics Tutorials</p>
+    </footer>
+</body>
+</html>

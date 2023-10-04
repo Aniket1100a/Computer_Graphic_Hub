@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flood_fill.css">
+    <title>Mastering Flood Fill Algorithm in Computer Graphics</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mastering Flood Fill Algorithm in Computer Graphics</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction to Flood Fill Algorithm</h2>
+        <p>Welcome to our comprehensive guide on the Flood Fill Algorithm, a pivotal technique in computer graphics used for coloring bounded areas and creating visually appealing designs. In this exploration, we delve into the intricacies of Flood Fill, understanding its principles, applications, and creative potentials. Whether you're a novice or a seasoned graphic designer, this guide will equip you with the knowledge to add depth and vibrancy to your digital creations.</p>
+    </section>
+
+    <section id="understanding-flood-fill">
+        <h2>Understanding Flood Fill</h2>
+        <h3>Principle:</h3>
+        <p>Flood Fill is an area-filling algorithm that determines the area connected to a given node in a multi-dimensional array. It recursively spreads color from a source point to neighboring points until a boundary is encountered. This algorithm is foundational in applications requiring efficient area coloring and boundary detection.</p>
+
+        <section id="flood-fill-algorithm-steps">
+            <h2>Flood Fill Algorithm Steps</h2>
+            <div class="flood-fill-steps">
+                <h3>Step 1: Select a Seed Point</h3>
+                <p>Choose a seed point within the area you want to fill.</p>
+            </div>
+            <div class="flood-fill-steps">
+                <h3>Step 2: Check Neighboring Pixels</h3>
+                <p>Check the neighboring pixels of the seed point.</p>
+            </div>
+            <div class="flood-fill-steps">
+                <h3>Step 3: Fill Current Pixel</h3>
+                <p>Fill the current pixel with the desired color.</p>
+            </div>
+            <div class="flood-fill-steps">
+                <h3>Step 4: Recursively Apply Flood Fill</h3>
+                <p>Recursively apply the Flood Fill algorithm to adjacent pixels.</p>
+            </div>
+            <div class="flood-fill-steps">
+                <h3>Step 5: Continue Until Boundaries</h3>
+                <p>Continue the process until all connected areas are filled, avoiding boundary pixels.</p>
+            </div>
+        </section>
+        
+        <h3>Applications:</h3>
+        <p>Explore the diverse applications of Flood Fill, from graphic editing software where it's used for filling shapes and creating gradients, to gaming environments where it brings life to in-game terrains and structures. Understanding Flood Fill opens the door to endless creative possibilities.</p>
+
+        <!-- Placeholder image for illustration -->
+        <img class="img" src="img/flood_fill_example.png" alt="Flood Fill Example">
+    </section>
+
+    <section id="flood-fill-techniques">
+        <h2>Flood Fill Techniques</h2>
+
+        <div class="flood-fill-method">
+            <h3>Boundary-Fill Algorithm:</h3>
+            <p>We explore the Boundary-Fill variant of the Flood Fill algorithm, focusing on its ability to color areas enclosed by boundaries. Learn the intricacies of boundary detection and understand how this technique is employed in graphic design applications for precise area coloring.</p>
+            <div class="flood-fill-steps">
+                <p>The Boundary-Fill algorithm fills the interior of an enclosed area. It checks if the current pixel is a boundary pixel. If not, it fills the current pixel and recurs for neighboring pixels.</p>
+                <h4>Steps:</h4>
+                <ol>
+                    <li>Check if the current pixel is a boundary pixel or within the boundary.</li>
+                    <li>If it is not a boundary pixel, fill the pixel with the desired color.</li>
+                    <li>Recursively apply the Boundary-Fill algorithm to neighboring pixels.</li>
+                    <li>Continue until all interior pixels are filled, avoiding boundary pixels.</li>
+                </ol>
+            </div>
+            
+            <!-- Placeholder image for illustration -->
+            <img class="img" src="img/boundary_fill_example.png" alt="Boundary Fill Example">
+        </div>
+
+        <div class="flood-fill-method">
+            <h3>Seed-Fill Algorithm:</h3>
+            <p>Delve into the Seed-Fill variant, a versatile approach that allows users to fill areas based on seed points. Understand the role of seed points in initiating the flood fill process and explore its applications in user-driven colorization and interactive design.</p>
+
+            <div class="flood-fill-steps">
+                <p>The Seed-Fill algorithm starts from a seed point and fills the area connected to the seed. It checks if the current pixel is within the boundary. If yes, it fills the pixel and recurs for neighboring pixels.</p>
+                <h4>Steps:</h4>
+                <ol>
+                    <li>Choose a seed point inside the area to be filled.</li>
+                    <li>Check if the current pixel is within the boundary.</li>
+                    <li>If it is inside the boundary, fill the pixel with the desired color.</li>
+                    <li>Recursively apply the Seed-Fill algorithm to neighboring pixels.</li>
+                    <li>Continue until all connected pixels within the boundary are filled.</li>
+                </ol>
+            </div>
+            
+            <!-- Placeholder image for illustration -->
+            <img class="img" src="img/seed_fill_example.png" alt="Seed Fill Example">
+        </div>
+    </section>
+
+    <section id="creative-applications">
+        <h2>Creative Applications</h2>
+
+        <h3>Artistic Expression:</h3>
+        <p>Explore the artistic potential of Flood Fill in creating intricate patterns, vibrant textures, and immersive backgrounds. Unleash your creativity by mastering the algorithm's nuances and integrating it into your artistic workflow.</p>
+
+        <!-- Placeholder image for illustration -->
+        <img class="img" src="img/artistic_expression_example.jpg" alt="Artistic Expression Example">
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>By mastering the Flood Fill Algorithm, you gain a powerful tool to transform digital canvases into captivating masterpieces. Whether you're a digital artist, game developer, or graphic designer, this guide empowers you to infuse your creations with color, depth, and creativity. Join us on this journey to unlock the potential of Flood Fill and elevate your graphic design endeavors to new heights.</p>
+    </section>
+
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Flood_fill" target="_blank" class="wikipedia-button">Learn More on Wikipedia</a>
+    </footer>
+</body>
+
+</html>
