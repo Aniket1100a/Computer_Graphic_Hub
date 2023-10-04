@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="line_algo_style.css">
+    <title>Mastering Line Drawing Algorithms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mastering DDA, Bresenham's, and Midpoint Line Drawing Algorithms</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction to Line Drawing Algorithms</h2>
+        <p>Brief overview of the significance of line drawing algorithms in computer graphics. Importance of choosing the right algorithm based on specific requirements.</p>
+    </section>
+
+    <section id="dda-algorithm">
+        <h2>DDA Algorithm (Digital Differential Analyzer)</h2>
+        <p>DDA is a basic line drawing algorithm that calculates intermediate points between two given points using linear interpolation. It divides the line into equal intervals along the major axis and then computes the corresponding points on the minor axis using slope. While easy to implement, DDA involves floating-point arithmetic, making it relatively slower compared to integer-based algorithms like Bresenham's Line Algorithm.</p>
+        <p>Comprehensive explanation of the DDA algorithm, highlighting its simplicity and straightforward approach. Step-by-step walkthrough of the DDA line drawing process with practical examples. Visual representations showcasing the results achieved using the DDA algorithm.</p>
+        <p>Formula: ( y = mx + b ) where ( m ) is the slope of the line.</p>
+        <div class="algorithm-step">
+            <h3>Step 1: Input</h3>
+            <p>Get input coordinates (x1, y1) and (x2, y2) for the two endpoints of the line.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 2: Calculate Differences</h3>
+            <p>Calculate the differences between the x-coordinates ( (  Delta x = x2 - x1  )) and y-coordinates ( (  Delta y = y2 - y1  )) of the two endpoints.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 3: Determine Number of Steps</h3>
+            <p>Determine the number of steps needed to draw the line. If  (  left|  Delta x  right|  ) is greater than  (  left|  Delta y  right|  ), the number of steps ( (  text{steps}  )) is equal to  (  left|  Delta x  right|  ). Otherwise,  (  text{steps} =  left|  Delta y  right|  ).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 4: Calculate Increment Values</h3>
+            <p>Calculate the increment values for x (( text{X-inc} = frac{Delta x}{text{steps}} )) and y (( text{Y-inc} = frac{Delta y}{text{steps}} )).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 5: Initialize Drawing</h3>
+            <p>Initialize a loop counter (( text{step} = 0 )) and initial coordinates (( x = x1 ), ( y = y1 )).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 6: Draw Line</h3>
+            <p>Inside a loop (from ( text{step} = 0 ) to ( text{step} = text{steps} )):
+                <br> - Plot the pixel at coordinates (round(( x )), round(( y ))).
+                <br> - Increment ( x ) by ( text{X-inc} ) and ( y ) by ( text{Y-inc} ).
+            </p>
+        </div>
+        
+        <!-- DDA Algorithm Images -->
+        <img src="img\dda_example_1.png" alt="DDA Example 1">
+    </section>
+
+    <section id="bresenham-algorithm">
+        <h2>Bresenham's Line Drawing Algorithm</h2>
+        <p>In-depth exploration of Bresenham's line drawing algorithm, focusing on its efficiency and integer arithmetic. Comparative analysis with DDA, emphasizing the advantages of Bresenham's method in terms of speed and accuracy. Visual demonstrations illustrating Bresenham's line drawing technique for various slopes.</p>
+        <p>Bresenham's Line Algorithm is an efficient method for drawing lines on a grid. It avoids floating-point arithmetic by using integer operations, making it faster than DDA. This algorithm calculates the decision parameter to choose the next pixel to plot. It works well for lines with any slope and handles diagonal lines accurately.</p>
+        <p>Decision Parameter: ( P_k = 2 cdot text{{dy}} - text{{dx}} ) where ( text{{dy}} ) is the change in y-coordinate and ( text{{dx}} ) is the change in x-coordinate.</p>
+        <div class="algorithm-step">
+            <h3>Step 1: Input</h3>
+            <p>Get input coordinates (x1, y1) and (x2, y2) for the two endpoints of the line.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 2: Calculate Differences</h3>
+            <p>Calculate the differences between the x-coordinates (Δx = x2 - x1) and y-coordinates (Δy = y2 - y1) of the two endpoints.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 3: Determine Initial Decision Parameter</h3>
+            <p>Calculate the initial decision parameter (P<sub>0</sub> = 2Δy - Δx).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 4: Draw Pixels</h3>
+            <p>Inside a loop (from x = x1 to x = x2):
+                <br> - Plot the pixel at coordinates (x, y).
+                <br> - If P<sub>k</sub> &lt; 0, update P<sub>k</sub> and y. If P<sub>k</sub> ≥ 0, only update P<sub>k</sub>.
+            </p>
+        </div>
+        
+        <!-- Bresenham's Algorithm Images -->
+        <img src="img/bresenham_example_2.png" alt="Bresenham Example">
+    </section>
+
+    <section id="midpoint-algorithm">
+        <h2>Midpoint Line Drawing Algorithm</h2>
+        <p>Introduction to the Midpoint line drawing algorithm, showcasing its ability to handle lines of any slope. Explanation of the mathematical concepts behind the Midpoint algorithm. Visual representations demonstrating the Midpoint algorithm's versatility in drawing lines with different angles.</p>
+        <div class="algorithm-step">
+            <h3>Step 1: Input</h3>
+            <p>Get input coordinates (x1, y1) and (x2, y2) for the two endpoints of the line.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 2: Calculate Initial Decision Parameter</h3>
+            <p>Calculate the initial decision parameter (P<sub>0</sub> = Δy - Δx/2).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 3: Draw Pixels</h3>
+            <p>Inside a loop (from x = x1 to x = x2):
+                <br> - Plot the pixel at coordinates (x, y).
+                <br> - If P<sub>k</sub> &lt; 0, update P<sub>k+1</sub> and y. If P<sub>k</sub> ≥ 0, only update P<sub>k+1</sub>.
+            </p>
+        </div>
+        
+        <!-- Midpoint Algorithm Images -->
+        <img src="img\midpoint_example_1.png" alt="Midpoint Example 1">
+    </section>
+
+    <footer>
+        <p>© 2023 Line Drawing Algorithms Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

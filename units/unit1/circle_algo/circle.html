@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="circle_style.css">
+    <title>Mastering Circle Drawing Algorithms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mastering DDA and Bresenham's Circle Drawing Algorithms</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction to Circle Drawing Algorithms</h2>
+        <p>Brief overview of the importance of circle drawing in computer graphics applications. Explanation of the challenges involved in drawing smooth circles digitally.</p>
+    </section>
+    <div id="circle_animation" style="margin-left: 40px;">
+        <canvas id="canvas" style="width: 200px;"></canvas>
+        <script src="script.js"></script>
+    </div>
+    <section id="dda-algorithm">
+        <h2>DDA Algorithm for Circle Drawing</h2>
+        <p>Comprehensive explanation of how DDA (Digital Differential Analyzer) can be adapted for drawing circles. Step-by-step guide on using DDA for circle drawing, emphasizing simplicity and ease of implementation. Visual representations showcasing circles generated using the DDA algorithm.</p>
+        <div class="algorithm-step">
+            <h3>Step 1: Input</h3>
+            <p>Get input coordinates of the center (h, k) and the radius (r) of the circle.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 2: Calculate Points</h3>
+            <p>Inside a loop (from ( theta = 0 ) to ( theta = 360 ) degrees):
+                <br> - Calculate ( x = h + r times cos(theta) ).
+                <br> - Calculate ( y = k + r times sin(theta) ).
+                <br> - Plot the pixel at coordinates (x, y).
+            </p>
+        </div>
+    </section>
+
+    <section id="bresenham-algorithm">
+        <h2>Bresenham's Circle Drawing Algorithm</h2>
+        <p>In-depth exploration of Bresenham's circle drawing algorithm, highlighting its efficiency and integer arithmetic. Comparative analysis with DDA, demonstrating the advantages of Bresenham's method in terms of speed and accuracy. Visual demonstrations illustrating Bresenham's circle drawing technique for circles of various sizes.</p>
+        <div class="algorithm-step">
+            <h3>Step 1: Input</h3>
+            <p>Get input coordinates of the center (h, k) and the radius (r) of the circle.</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 2: Initialize Parameters</h3>
+            <p>Initialize decision parameter ( P = 3 - 2r ).</p>
+        </div>
+        
+        <div class="algorithm-step">
+            <h3>Step 3: Draw Pixels</h3>
+            <p>Inside a loop (starting from ( x = 0 ) to ( y = r/sqrt{2} )):
+                <br> - Plot the pixels at coordinates (h + x, k + y) and (h - x, k + y).
+                <br> - Plot the pixels at coordinates (h + y, k + x) and (h - y, k + x).
+                <br> - Update ( P ) based on the decision parameter condition.
+            </p>
+        </div>
+        
+        <!-- Bresenham's Algorithm Circle Images -->
+        <img src="img/bresenham_circle_example_1.png" alt="Bresenham Circle Example 1">
+    </section>
+
+    <div id="wikipedia-link">
+        <p>For further details, visit the <a href="https://en.wikipedia.org/wiki/Midpoint_circle_algorithm" target="_blank">Wikipedia page on Circle Drawing Algorithms</a>.</p>
+    </div>
+
+    <footer>
+        <p>© 2023 Circle Drawing Algorithms Guide. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
